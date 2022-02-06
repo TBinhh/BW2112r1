@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postition</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: darksalmon;
+            margin: auto;
+            position: relative;
+        }
+        /* để dùng position:absolute thì thẻ cha phải có thuộc tính position: relative;  */
+        .child-1, .child-2 {
+            width: 200px;
+            height: 200px;
+            }
+        .child-1 {
+            background-color: hotpink;
+            
+        }
+        /* .child-2 {
+            background-color: mediumseagreen;
+            position: relative;
+            top: 30px;
+            opacity: 0.4;
+            right: 50px;
+        } */
+        /* position: relative đưa nội dung di chuyển nhưng k ảnh hưởng nd khác
+            top: 30px là di chuyển element xuống dưới 30px */
+            .child-2 {
+            background-color: mediumseagreen;
+            position: absolute; 
+            top: 100px;            
+            opacity: 0.4;
+            left: 50px;
+            /* position: absolute; căn chỉnh theo vị trí của cha nó */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+       
+    </div>
+</body>
+</html>

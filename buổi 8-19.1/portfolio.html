@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <style>
+        body {
+            background-color: #C29BF7;
+            /* background-color: red;
+                background-color: #C29BF7;
+                background-color: rgb(23, 252, 55); */
+            color: black;   
+            font-family: Arial, Helvetica, sans-serif;
+            /* họ sans-serif là họ chữ k có chân */
+            /* thường dùng 1 họ nhiều font chữ để tránh lỗi giao diện */
+            font-size: 16px; 
+           
+        }
+        #general {
+            color: red; 
+            /* dùng id để sử dụng style này và chỉ dùng 1 lần
+                tên bắt đầu bằng # để hiểu là 1 id*/
+        }
+        .video-intro {
+            width: 40%;
+            /* dùng class để sử dụng style này và dùng được cho nhiều thẻ
+                tên bắt đầu bằng . để hiểu là 1 class*/
+        }
+        h2 {
+            background-color: blanchedalmond;
+            /* tất cả các thẻ h đều mặc định chiều rộng bằng toàn bộ cha nó(toàn màn hình) */
+            width: 30%;
+            height: 40px;
+            border: 2px solid navy;
+            margin-left: 100px;
+        }
+        /*  box model 
+            content là phần nội dung của element
+            margin là phần không gian bao bên ngoài
+            padding là phần không gian ngăn cách bên trong */
+        img {
+            border-radius: 35px;
+            margin-left: 150px;
+        }
+        table, th, td {
+            border: 3px dotted darkgreen;
+            border-collapse: collapse;
+        }
+        /* được hiểu là css này áp dụng cho tất cả các thẻ table,th,td */
+         /* thuộc tính: dày kiểu(dotted, inset, dashed...) màu */
+         /* border-collapse: loại bớt các đường viền bị thừa */
+         table {
+             width: 30%;
+             /* height: 35%; */
+         }
+         th, td {
+             line-height: 40px;
+         }
+         td {
+             text-align: center;
+         }
+        link-data {
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <h1> Tran Thi Thanh Binh's portfolio</h1>
+    <h2 id="general">General Information</h2>
+    <h3>Name:</h3>
+    <p><b>Trần Thị Thanh <strong>Bình</strong> </b></p>
+    <img src="5d3a6db1f63dda09c1e6c5187db6c2d0.jpg" alt="mình không có hình" width=40% height=500>
+    <h2> Intro video</h2>
+    <video src="./Video/Talking Huskies.mp4" width="800px" controls ></video>
+    <iframe class="video-intro" width="800" src="https://www.youtube.com/watch?v=i82528KGDdo"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i82528KGDdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Age:</h3>
+    <p><i>00</i></p>
+    <h3>Job </h3>
+    <p><small>Teacher</small></p>
+    <h3>Address</h3>
+    <p><strong>abc</strong></p>
+    <h3>Email</h3>
+    <p><mark>abc@gmail.com</mark></p>
+    <h3>Phone number</h3>
+    <p>12365<sub>25</sub>54789</p>
+    <hr> <br>
+
+    <h2>Work Experience</h2>
+    <ol>
+        <li>Reception</li>
+        <li>Teacher</li>
+                                                                                                                          
+    </ol>
+
+    <hr> <br>
+    <h2>Achivement</h2>
+
+    <hr> <br>
+    <h2>Interest</h2>
+
+    <hr> <br>
+    <h2>Favourite songs</h2>
+    <!-- <ul>
+        <li> <a href="https://learn.codegym.vn/courses/building-website-with-html-css-v2-0/lessons/cau-truc-va-cac-the-html-co-ban-2/topic/quiz-html-media">Quiz HTML</a>
+        </li> -->
+        <!-- a anchor tag -->
+        <!-- href hyperlink reference
+        <li>hsafoahw</li>
+    </ul> -->
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Channel</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> Learn page</td>
+            <td class="link-data"><a href="#">thanhbinh</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>gmail</td>
+            <td class="link-data"><a href="#">thanhbinh</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Zalo</td>
+            <td class="link-data"><a href="#">thanhbinh</a></td>
+        </tr>
+    </table>
+    <!-- Tuổi
+    Nghề nghiệp
+    Địa chỉ
+    Email
+    Số điện thoại
+    Giới tính -->
+    
+</body>
+</html>
