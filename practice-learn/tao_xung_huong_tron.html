@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao xung huong tron</title>
+    <style>
+       .circle {
+           position: absolute;
+           top: 30%;
+           left: 40%;
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           background-color: green;
+           border: 3px solid green;
+           box-sizing: border-box;
+           /* transform: translate(-500, -50%); */
+           box-shadow: 0 0 0 36px #45237a,
+					0 0 0 40px #56ff00;
+       }
+       .circle:after, .circle:before {
+           content: "";
+           position: absolute;
+           left: -30px;
+           right: -30px;
+           top: -30px;
+           bottom: -30px;
+           border: 3px solid green;
+           border-radius: 50%;
+           animation: move 2s linear infinite;
+       }
+       
+       @keyframes move {
+           0% {transform: scale(2.0);}
+           100% {transform: scale(0.7)}
+       }
+         
+    </style>
+</head>
+<body>
+    <div class="circle">
+            </div>
+</body>
+</html>

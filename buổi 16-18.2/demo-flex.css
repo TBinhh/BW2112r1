@@ -1,0 +1,50 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+   height: 70%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(149, 196, 67);
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* center, flex-start, flex-end, space-between, space-around, space-evenly */
+    justify-content: space-evenly;
+    /* sắp xếp các element theo chiều trục phụ */
+    align-items: center;
+
+    
+}
+.item {
+    width: 200px;
+    /* height: 200px; */
+    font-size: 36px;
+    color: azure;
+    text-align: center;
+
+}
+.item:nth-of-type(1) {
+    background-color: brown;
+    order: 2;
+    /* grow mô tả tỉ lệ nở ra khi không gian dư */
+    /* flex-grow: 2; */
+    /* shrink mô tả tỉ lệ giảm nhanh hơn khi không gian nhỏ đi */
+    /* flex-shrink: 2; */
+    align-self: stretch;
+}
+.item:nth-of-type(2) {
+    background-color: darkgreen;
+    order: 3;
+    /* flex-grow: 1; */
+}
+.item:nth-of-type(3) {
+    background-color: midnightblue;
+    order: 1;
+}

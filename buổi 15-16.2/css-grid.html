@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 80%;
+            width: 80%;
+            background-color: cornflowerblue;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 0.5fr 0.8fr 2fr 2fr;
+            gap: 10px;
+            grid-template-areas: 
+            "header header header header"
+            "nav nav nav nav"
+            "tab1 tab2 tab3 tab4"
+            "main-content main-content main-content banner1"
+            "main-content main-content main-content banner2";
+            
+        }
+        .header {
+            background-color: aquamarine;
+            grid-area: header;
+        }
+        .nav {
+            background-color: brown;
+            grid-area: nav;
+        }
+        .tab1 {
+            background-color: darkviolet;
+            grid-area: tab1;
+        }
+        .tab2 {
+            background-color: blue;
+            grid-area: tab2;
+        }
+        .tab3 {
+            background-color: orangered;
+            grid-area: tab3;
+        }
+        .tab4 {
+            background-color: hotpink;
+            grid-area: tab4;
+        }
+        .main-content {
+            background-color: darkcyan;
+            grid-area: main-content;
+        }
+        .banner1 {
+            background-color: darkslategray;
+            grid-area: banner1;
+        }
+        .banner2 {
+            background-color: midnightblue;
+            grid-area: banner2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="tab1">tab1</div>
+        <div class="tab2">tab2</div>
+        <div class="tab3">tab3</div>
+        <div class="tab4">tab4</div>
+        <div class="banner1">banner1</div>
+        <div class="banner2">banner2</div>
+        <div class="main-content">main-content</div>
+    </div>
+</body>
+</html>

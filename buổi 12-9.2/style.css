@@ -1,0 +1,20 @@
+p {
+    background-color: rgb(158, 200, 243);  
+}
+div p {
+    color: red
+}
+div div p {
+    font-weight: bold;
+}
+body > p {
+    font-size: large;
+}
+/* p nằm dưới div tức là anh em kế cận  */
+div + p {
+    text-decoration: underline;
+}
+/* tất cả các thẻ p nằm cùng cấp là anh chị em chung */
+div ~ p {
+    font-style: italic;
+}
