@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <!-- banner -->
@@ -30,11 +31,11 @@
     <section id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li><hr>
-                <li><a href="#">Features</a></li><hr>
-                <li><a href="#">Service</a></li><hr>
-                <li><a href="#">Testimoial</a></li><hr>
-                <li><a href="#">Meet Us</a></li><hr>
+                <li><a href="#banner">Home</a></li><hr>
+                <li><a href="#feature">Features</a></li><hr>
+                <li><a href="#service">Service</a></li><hr>
+                <li><a href="#testimonial">Testimoial</a></li><hr>
+                <li><a href="#footer">Meet Us</a></li><hr>
             </ul>
         </nav>
     </section>
@@ -79,11 +80,124 @@
                 </div>
             </div>
             <div class="feature-img">
-                <img src="./images/taylor-swift-attractive-beautiful-girl.jpg"
+                <img src="./images/taylor-swift-attractive-beautiful-girl.jpg">
             </div>
         </div>
     </section>
     <!-- end feature -->
+    <!-- services -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provider Better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="./images/t.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Beard Trim</h3><hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/_elle_fanning_.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Cut</h3><hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/emma-watson-12_1587120167222.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3><hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./images/Gigi-Hadid2.2e16d0ba.fill-1200x800.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Dry Shapoo</h3><hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end service -->
+    <!-- testimonial -->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <H1>What Client Says</H1>
+
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./images/Elle_Fanning_Cannes_2016.jpg">
+                    <div class="user-info">
+                        <h4>ELLE FANNING<i class="bi bi-twitter"></i></h4>
+                        <small>@ellefaning</small>
+                    </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./images/-7.jpg">
+                    <div class="user-info">
+                        <h4>TAYLOR SWIFT <i class="bi bi-twitter"></i></h4>
+                        <small>@taylor123</small>
+                    </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./images/selena-gomezhd-w.jpg">
+                    <div class="user-info">
+                        <h4>SELENA<i class="bi bi-twitter"></i></h4>
+                        <small>@selena</small>
+                    </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end t -->
+    <!-- footer -->
+    <section id="footer">
+        <img src="./images/—Pngtree—beauty logo_6234120.png" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Shop</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Openning Hours</h1>
+                <p><i class="bi bi-clock"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="bi bi-clock"></i>Satuday to Sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc Colony, xyz City In<i class="bi bi-geo-alt"></i></p>
+                <p>example@website.com<i class="bi bi-paperclip"></i></p>
+                <p>+01 125857563 <i class="bi bi-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+            <p>Copyright Easy Tutorial</p>
+        </div>
+    </section>
+    <!-- end footer -->
+
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
@@ -99,6 +213,12 @@
                 menu.src = "./images/menu.png"
             }
         }
+
+        // All animations will take exactly 500ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
     </script>
 </body>
 </html>
