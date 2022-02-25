@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(36, 44, 80);
+            position: relative;
+        }
+        .main-box{
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            margin: auto;
+            background-color: none;
+            width: 35%;
+            height: 60%;
+            border: 3px solid white;
+            border-radius: 2px;
+            color: white;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <div class="main">
+      <div class="main-box">
+          <h1>Register Today</h1>
+          <p>Fill in the data below</p>
+          <input type="text" name="fullname" placeholder="Full Name">
+          <input type="email" name="email" placeholder="E-mail Addess">
+          <select placeholder="Position">
+              <option>student</option>
+              <option>teacher</option>
+          </select >
+          <input type="password" name="password" placeholder="Password">
+          <p>Gender:
+            <input type="radio" name="Gender" > Male 
+            <input type="radio" name="Gender" > Female 
+            <input type="radio" name="Gender" > Secret
+          </p>
+      </div>
+  </div>  
+</body>
+</html>
