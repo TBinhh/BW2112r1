@@ -1,0 +1,54 @@
+// #28a745 green
+// #0060C9 xanh da trời
+// #f16423 cam
+// #34eb96 xanh bạc hà
+// #A06C20 nâu
+// #007F31 xanh lá cây
+// #FF0000 đỏ tươi
+
+$color_green: #28a745;
+$color_blue:#0060C9;
+$color_orange: #f16423;
+$color_brown: #A06C20;
+$color_mint:#5ef8b0;
+$size_s: 0.7rem;
+$size_xl:5rem;
+$size_l: 1.6rem;
+
+
+
+body,html {
+    font-family: 'Redressed', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainbody {
+    height: 60%;
+    width: 40%;
+    text-align: center;
+   padding: 10px;
+   margin: auto;
+}
+
+.h {opacity: 0;}
+.b{
+    color:$color_mint ;
+    font-size:$size_xl ;
+}
+.breadcrumb {
+    color: white;
+}
+@mixin layout($color, $size) {
+    .a{
+        color:$color ;
+        font-size:$size ;
+    }
+          
+    .breadcrumb-item a{
+        color:$color ;
+        font-size:$size ;
+    }
+    
+}
+@include layout($color_orange,$size_l )     

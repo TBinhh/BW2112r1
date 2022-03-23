@@ -10,8 +10,9 @@ header {
     width: 100%;
     background-color: aliceblue;
    position: fixed;
-   /* margin: 0;
-   padding: 0; */
+   z-index: 3;
+   margin: 0;
+   padding: 0;
 }
 header img {
     height: 50%;
@@ -22,14 +23,22 @@ header img {
 }
 header ul {
     list-style-type: none;
-    
+    text-align: center;
+    margin-top: 1%;
+       
 }
 header li {
+    width: 10%;
+    padding: 30px;
     display: inline-block;
     padding-left: 20px;
     float: left;
     padding-top: 20px;
     font-weight: bold;
+    transform: .5s;
+}
+header li:hover {
+    background-color:rgb(125, 211, 125);
 }
 header button {
     float: right;
@@ -40,6 +49,9 @@ header button {
     padding-right: 5%;
     color: linen;
     padding: 15px;
+    position: absolute;
+    top:0;
+    right: 0;
 }
 .section-1 {
     height: 80%;

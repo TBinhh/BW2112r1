@@ -1,0 +1,48 @@
+$font-family: Tahoma;
+$font-size: 22px;
+$primary-light: #59f3e6;
+$primary-dark: #007669;
+$nav-height: 50px;
+
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+#container {
+    max-width: 80%;
+    margin: auto;
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+        li {
+            flex-grow: 1;
+            background-color: $primary-light;
+            border: 2px solid $primary-dark;
+            line-height: $nav-height;
+            text-align: center;
+            transition: 1s;
+        }
+        li:hover {
+            background-color: $primary-dark;
+           
+        }
+        li a {
+            text-decoration: none;
+            color: $primary-dark
+        }
+        li:hover a {
+            color: aliceblue;
+        }
+    }
+
+    main {
+        h1 {
+            color: $primary-dark;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// #B20D5A đỏ đậm
+// #C7FCEB xanh trời nhạt
+// #1908A5 xanh đậm
+// #F9F871 vàng nhạt
+// #007A58 xanh lá cây
+
+$primary-color-extra-small: #B20D5A;
+$secondary-color-extra-small: #C7FCEB;
+$primary-color-small:#1908A5;
+$secondary-color-small:#F9F871;
+$primary-color-medium: #007A58;
+$secondary-color-medium: #ffffff;
+$extra_small: 14px;
+$small: 18px;
+$medium: 24px;
+
+@mixin layout($primary, $secondary, $font_size) {
+    #container {
+        border: 2px solid $primary;
+        background-color: $secondary;
+        font-size: $font_size;
+    }
+    h1, p{
+        color: $primary;
+    }
+}
+
+@media screen and (max-width:576px) {
+    @include layout($primary-color-extra-small,$secondary-color-extra-small,$extra_small )
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    @include layout($primary-color-small,$secondary-color-small,$small )
+}
+@media screen and (min-width:769px)  {
+    @include layout($primary-color-medium,$secondary-color-medium,$medium )
+}

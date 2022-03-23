@@ -1,0 +1,39 @@
+body, html {
+  font-family: 'Redressed', cursive;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainbody {
+  height: 60%;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.h {
+  opacity: 0;
+}
+
+.b {
+  color: #5ef8b0;
+  font-size: 5rem;
+}
+
+.breadcrumb {
+  color: white;
+}
+
+.a {
+  color: #f16423;
+  font-size: 1.6rem;
+}
+
+.breadcrumb-item a {
+  color: #f16423;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */
